@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>715745680168-3vkiqouig6mqnfqsqu3ht0ltlbji4jcl.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.715745680168-3vkiqouig6mqnfqsqu3ht0ltlbji4jcl</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>715745680168-rofl0udq0ggfe47n0uf1ip3o6mmb7gb6.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAGk_FxPoiRUz99RVkdcK-DOZqucYXh4Rs</string>
+	<key>GCM_SENDER_ID</key>
+	<string>715745680168</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>centennialCollege.Tick-it</string>
+	<key>PROJECT_ID</key>
+	<string>tick-it-b97c1</string>
+	<key>STORAGE_BUCKET</key>
+	<string>tick-it-b97c1.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:715745680168:ios:8dc2e46e6a8b8306b00e1d</string>
+	<key>DATABASE_URL</key>
+	<string>https://tick-it-b97c1.firebaseio.com</string>
+</dict>
+</plist>

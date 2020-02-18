@@ -1,0 +1,6 @@
+framework module Pods_Tick_it {
+  umbrella header "Pods-Tick-it-umbrella.h"
+
+  export *
+  module * { export * }
+}

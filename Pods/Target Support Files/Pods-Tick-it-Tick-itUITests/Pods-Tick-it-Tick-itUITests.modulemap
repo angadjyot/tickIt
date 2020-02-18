@@ -1,0 +1,6 @@
+framework module Pods_Tick_it_Tick_itUITests {
+  umbrella header "Pods-Tick-it-Tick-itUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
