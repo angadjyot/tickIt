@@ -43,11 +43,6 @@ class ViewController: UIViewController {
         googleSignUp.layer.borderWidth  = 1.0
         googleSignUp.layer.borderColor = UIColor(displayP3Red: 255/255, green: 255/255, blue: 255/255, alpha:  255/255).cgColor
         
-//        
-//        signUpOutlet.layer.cornerRadius = 10.0
-//        signUpOutlet.layer.borderWidth  = 1.0
-//        signUpOutlet.layer.borderColor = UIColor(displayP3Red: 255/255, green: 255/255, blue: 255/255, alpha:  255/255).cgColor
-        
         
     }
 

@@ -119,6 +119,30 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D42AF0A723FC8C3400F94319 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D4F3A35A23F1D48D00982238 /* ViewController.swift */,
+				D40C408623FB806E0039A145 /* TicketViewController.swift */,
+				D463DC7823F5B4D000F130D4 /* HomeViewController.swift */,
+				D4BE905823F3115F00D2AC59 /* RegisterViewController.swift */,
+				D463DC7C23F5DEE900F130D4 /* MovieDetailsViewController.swift */,
+				D40C408023FAFAA30039A145 /* CinemasListViewController.swift */,
+				D40C408423FB56C10039A145 /* SelectSeatsViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D42AF0A823FC8D6400F94319 /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				D463DC7E23F6155100F130D4 /* MovieCastCollectionViewCell.swift */,
+				D40C408223FB20850039A145 /* TheatreListCollectionViewCell.swift */,
+				D463DC7A23F5B62F00F130D4 /* CollectionViewCell.swift */,
+			);
+			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
 		D4F3A34C23F1D48D00982238 = {
 			isa = PBXGroup;
 			children = (
@@ -144,22 +168,14 @@
 		D4F3A35723F1D48D00982238 /* Tick-it */ = {
 			isa = PBXGroup;
 			children = (
+				D42AF0A823FC8D6400F94319 /* CollectionViewCells */,
+				D42AF0A723FC8C3400F94319 /* Home */,
 				D4F3A35823F1D48D00982238 /* AppDelegate.swift */,
 				D4F3A38623F2268700982238 /* GoogleService-Info.plist */,
-				D4F3A35A23F1D48D00982238 /* ViewController.swift */,
 				D4F3A35C23F1D48D00982238 /* Main.storyboard */,
-				D40C408623FB806E0039A145 /* TicketViewController.swift */,
-				D40C408423FB56C10039A145 /* SelectSeatsViewController.swift */,
-				D463DC7A23F5B62F00F130D4 /* CollectionViewCell.swift */,
-				D463DC7823F5B4D000F130D4 /* HomeViewController.swift */,
-				D4BE905823F3115F00D2AC59 /* RegisterViewController.swift */,
 				D4F3A35F23F1D49400982238 /* Assets.xcassets */,
 				D4F3A36123F1D49400982238 /* LaunchScreen.storyboard */,
 				D4F3A36423F1D49400982238 /* Info.plist */,
-				D463DC7C23F5DEE900F130D4 /* MovieDetailsViewController.swift */,
-				D463DC7E23F6155100F130D4 /* MovieCastCollectionViewCell.swift */,
-				D40C408023FAFAA30039A145 /* CinemasListViewController.swift */,
-				D40C408223FB20850039A145 /* TheatreListCollectionViewCell.swift */,
 			);
 			path = "Tick-it";
 			sourceTree = "<group>";
