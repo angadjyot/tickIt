@@ -11,8 +11,6 @@ import UIKit
 class MovieCastCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var actorNameLabel: UILabel!
-    
-    
     @IBOutlet weak var crewNameLabel: UILabel!
     
 }

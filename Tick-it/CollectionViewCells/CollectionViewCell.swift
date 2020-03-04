@@ -9,11 +9,9 @@
 import UIKit
 
 class CollectionViewCell: UICollectionViewCell {
-    
-    
+
     @IBOutlet weak var image: UIImageView!
-    
-    
     @IBOutlet weak var movieName: UILabel!
+    @IBOutlet weak var selectionLabel: UILabel!
     
 }
