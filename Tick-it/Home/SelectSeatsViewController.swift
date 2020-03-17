@@ -170,6 +170,7 @@ class SelectSeatsViewController: UIViewController {
             vc?.docId = docId
         }
     }
+    
     @objc func activityIndicator(){
         indicator = UIActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 40.0, height: 40.0))
         indicator.style = .gray

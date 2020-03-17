@@ -22,6 +22,7 @@
 		D463DC7F23F6155100F130D4 /* MovieCastCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D463DC7E23F6155100F130D4 /* MovieCastCollectionViewCell.swift */; };
 		D4BE08FC240F0A8D004C9D18 /* SportsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BE08FB240F0A8D004C9D18 /* SportsViewController.swift */; };
 		D4BE905923F3115F00D2AC59 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BE905823F3115F00D2AC59 /* RegisterViewController.swift */; };
+		D4C66349241812B200941C46 /* EventsTotalTicketsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C66348241812B200941C46 /* EventsTotalTicketsViewController.swift */; };
 		D4F3A35923F1D48D00982238 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F3A35823F1D48D00982238 /* AppDelegate.swift */; };
 		D4F3A35B23F1D48D00982238 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F3A35A23F1D48D00982238 /* ViewController.swift */; };
 		D4F3A35E23F1D48D00982238 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4F3A35C23F1D48D00982238 /* Main.storyboard */; };
@@ -69,6 +70,7 @@
 		D463DC7E23F6155100F130D4 /* MovieCastCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCastCollectionViewCell.swift; sourceTree = "<group>"; };
 		D4BE08FB240F0A8D004C9D18 /* SportsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsViewController.swift; sourceTree = "<group>"; };
 		D4BE905823F3115F00D2AC59 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		D4C66348241812B200941C46 /* EventsTotalTicketsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsTotalTicketsViewController.swift; sourceTree = "<group>"; };
 		D4F3A35523F1D48D00982238 /* Tick-it.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tick-it.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4F3A35823F1D48D00982238 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D4F3A35A23F1D48D00982238 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 				D4231BE4240CA80200BEFDCA /* EventsTicketsViewController.swift */,
 				D4231BE2240C986500BEFDCA /* EventsViewController.swift */,
 				D4BE08FB240F0A8D004C9D18 /* SportsViewController.swift */,
+				D4C66348241812B200941C46 /* EventsTotalTicketsViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -468,6 +471,7 @@
 				D4BE08FC240F0A8D004C9D18 /* SportsViewController.swift in Sources */,
 				D4231BE3240C986500BEFDCA /* EventsViewController.swift in Sources */,
 				D4231BE5240CA80200BEFDCA /* EventsTicketsViewController.swift in Sources */,
+				D4C66349241812B200941C46 /* EventsTotalTicketsViewController.swift in Sources */,
 				D4F3A35B23F1D48D00982238 /* ViewController.swift in Sources */,
 				D4F3A35923F1D48D00982238 /* AppDelegate.swift in Sources */,
 				D40C408123FAFAA30039A145 /* CinemasListViewController.swift in Sources */,
