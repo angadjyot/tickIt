@@ -50,11 +50,18 @@ class EventsTicketsViewController: UIViewController {
     var db:Firestore?
     var defaults = UserDefaults.standard
     var docId:String?
-
+    var silverCheck:Bool?
+    var goldCheck:Bool?
+    var premiumCheck:Bool?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
+        self.silverCheck = false
+        self.goldCheck = false
+        self.premiumCheck = false
         
         self.ticketButtonOutlet.layer.cornerRadius = 10.0
         self.ticketButtonOutlet.layer.masksToBounds = true
@@ -83,6 +90,13 @@ class EventsTicketsViewController: UIViewController {
     @IBAction func silverStepperAction(_ sender: UIStepper) {
         self.silver.text = "\(sender.value)"
         self.silverTicketCount = Int(sender.value)
+        
+        if self.silver.text == "0.0"{
+            self.silverCheck = false
+        }else{
+            self.silverCheck = true
+        }
+        
     }
     
     
@@ -90,6 +104,14 @@ class EventsTicketsViewController: UIViewController {
     @IBAction func goldStepperAction(_ sender: UIStepper) {
         self.gold.text = "\(sender.value)"
         self.goldTicketCount = Int(sender.value)
+       
+        
+        if self.gold.text == "0.0"{
+            self.goldCheck = false
+        }else{
+            self.goldCheck = true
+        }
+        
     }
     
     
@@ -97,6 +119,14 @@ class EventsTicketsViewController: UIViewController {
     @IBAction func premiumStepperAction(_ sender: UIStepper) {
         self.premium.text = "\(sender.value)"
         self.premiumTicketCount = Int(sender.value)
+        
+        
+        if self.premium.text == "0.0"{
+            self.premiumCheck = false
+        }else{
+            self.premiumCheck = true
+        }
+        
     }
     
     
@@ -133,7 +163,7 @@ class EventsTicketsViewController: UIViewController {
     @IBAction func confirmTickets(_ sender: UIButton) {
         
         
-        if silver.text == "0.0" || gold.text == "0.0" || premium.text == "0.0"{
+        if self.silverCheck == false && self.goldCheck == false && self.premiumCheck == false{
             let alert:UIAlertController = UIAlertController(title: "Message", message: "Please select the number of ticket!", preferredStyle: .alert)
             let alertAction:UIAlertAction = UIAlertAction(title: "OK", style: .default, handler: { (action) in
                 

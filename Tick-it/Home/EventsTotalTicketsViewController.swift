@@ -65,15 +65,76 @@ class EventsTotalTicketsViewController: UIViewController {
                     let urlImage = self.dict["imageUrl"] as? String
                     let url = URL(string: urlImage!)
                     self.image.kf.setImage(with: url)
-                    
-                    self.silverCost.text = "\(String(describing: i["silverTicketCountTotal"]!)) x Silver Admission"
-                    self.goldCost.text = "\(String(describing: i["goldTicketCountTotal"]!)) x Gold Admission"
-                    self.platinumCost.text = "\(String(describing: i["platinumTicketCountTotal"]!)) x Platinum Admission"
+              
+//                    ------------------------------------------
                     
                     
-                    self.silver.text = "\(self.dict["silverTicketCost"]!)$ "
-                    self.gold.text = "\(self.dict["goldTicketCost"]!)$ "
-                    self.platinum.text = "\(self.dict["platinumTicketCost"]!)$ "
+                    if (i["silverTicketCountTotal"] as? Int == 0){
+                        
+                      if (i["goldTicketCountTotal"] as? Int != 0){
+                            self.silverCost.text = "\(String(describing: i["goldTicketCountTotal"]!)) x Gold Admission"
+
+                            self.silver.text = "\(self.dict["goldTicketCost"]!)$ "
+
+                      }else{
+                            self.silverCost.text = ""
+                            self.silver.text = ""
+                      }
+                    
+                        
+                    }else{
+                        self.silverCost.text = "\(String(describing: i["silverTicketCountTotal"]!)) x Silver Admission"
+
+                         self.silver.text = "\(self.dict["silverTicketCost"]!)$ "
+                        
+                    }
+//           ------------------------------------------------------
+                    
+                    if (i["goldTicketCountTotal"] as? Int == 0){
+                        
+                        
+                        if (i["platinumTicketCountTotal"] as? Int != 0){
+                            self.goldCost.text = "\(String(describing: i["platinumTicketCountTotal"]!)) x Platinum Admission"
+                            self.gold.text = "\(self.dict["platinumTicketCost"]!)$ "
+                        }else{
+                            self.goldCost.text = ""
+                            self.gold.text = ""
+                        }
+                    
+                    }else{
+                        
+                        if (i["silverTicketCountTotal"] as? Int == 0){
+                            self.silverCost.text = "\(String(describing: i["goldTicketCountTotal"]!)) x Gold Admission"
+                            
+                            self.silver.text = "\(self.dict["goldTicketCost"]!)$ "
+                        }else{
+                            
+                            self.goldCost.text = "\(String(describing: i["goldTicketCountTotal"]!)) x Gold Admission"
+                            self.gold.text = "\(self.dict["goldTicketCost"]!)$ "
+                            
+                        }
+                    }
+                    
+                    
+//             -------------------------------------------------
+                    
+                    if (i["platinumTicketCountTotal"] as? Int == 0){
+                        self.platinumCost.text = ""
+                        self.platinum.text = ""
+                    }else{
+                        
+                         if (i["goldTicketCountTotal"] as? Int == 0){
+                            
+                            self.goldCost.text = "\(String(describing: i["platinumTicketCountTotal"]!)) x Platinum Admission"
+                            self.gold.text = "\(self.dict["platinumTicketCost"]!)$ "
+                            
+                            
+                        }else{
+                            self.platinumCost.text = "\(String(describing: i["platinumTicketCountTotal"]!)) x Platinum Admission"
+                            self.platinum.text = "\(self.dict["platinumTicketCost"]!)$ "
+                        }
+                    }
+                
                 }
                 
 //                self.movie.text = self.dict["movieName"] as? String

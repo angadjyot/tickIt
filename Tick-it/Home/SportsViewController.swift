@@ -41,10 +41,17 @@ class SportsViewController: UIViewController {
     }
     
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "tickets"{
+            let vc = segue.destination as? SportsTicketBookingViewController
+            vc?.sportDict = sportDict
+        }
+    }
+    
     
     @IBAction func ticketsAction(_ sender: UIButton) {
         
-        
+        self.performSegue(withIdentifier: "tickets", sender: nil)
         
         
     }
