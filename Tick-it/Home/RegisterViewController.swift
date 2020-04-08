@@ -25,6 +25,9 @@ class RegisterViewController: UIViewController {
         super.viewDidLoad()
         register.layer.cornerRadius = 10.0
         register.layer.masksToBounds = true
+        
+        self.navigationController?.navigationBar.barTintColor = UIColor(displayP3Red: 19/255, green: 47/255, blue: 170/255, alpha: 1/255)
+        
     }
     
     

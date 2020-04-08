@@ -18,14 +18,24 @@
 		D4142E8F2424309900646781 /* SportsTicketBookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4142E8E2424309900646781 /* SportsTicketBookingViewController.swift */; };
 		D4231BE3240C986500BEFDCA /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4231BE2240C986500BEFDCA /* EventsViewController.swift */; };
 		D4231BE5240CA80200BEFDCA /* EventsTicketsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4231BE4240CA80200BEFDCA /* EventsTicketsViewController.swift */; };
+		D45AB6EA2433BDFA0009771A /* PopularVisitsBookTicketsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45AB6E92433BDFA0009771A /* PopularVisitsBookTicketsViewController.swift */; };
+		D45AB6EC2433C4420009771A /* PopularTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45AB6EB2433C4420009771A /* PopularTableViewCell.swift */; };
+		D45AB6EE2433ED8B0009771A /* PopularVisitsFinalTicketsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45AB6ED2433ED8B0009771A /* PopularVisitsFinalTicketsViewController.swift */; };
 		D463DC7923F5B4D000F130D4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D463DC7823F5B4D000F130D4 /* HomeViewController.swift */; };
 		D463DC7B23F5B62F00F130D4 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D463DC7A23F5B62F00F130D4 /* CollectionViewCell.swift */; };
 		D463DC7D23F5DEE900F130D4 /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D463DC7C23F5DEE900F130D4 /* MovieDetailsViewController.swift */; };
 		D463DC7F23F6155100F130D4 /* MovieCastCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D463DC7E23F6155100F130D4 /* MovieCastCollectionViewCell.swift */; };
 		D4BE08FC240F0A8D004C9D18 /* SportsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BE08FB240F0A8D004C9D18 /* SportsViewController.swift */; };
 		D4BE905923F3115F00D2AC59 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BE905823F3115F00D2AC59 /* RegisterViewController.swift */; };
+		D4BEC771243E53560057F8D0 /* Movies.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4BEC770243E53560057F8D0 /* Movies.storyboard */; };
+		D4BEC775243E53EF0057F8D0 /* Events.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4BEC773243E53EF0057F8D0 /* Events.storyboard */; };
+		D4BEC77C243E55920057F8D0 /* Sports.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4BEC77B243E55920057F8D0 /* Sports.storyboard */; };
+		D4BEC781243E57CE0057F8D0 /* Popular.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4BEC780243E57CE0057F8D0 /* Popular.storyboard */; };
 		D4C66349241812B200941C46 /* EventsTotalTicketsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C66348241812B200941C46 /* EventsTotalTicketsViewController.swift */; };
+		D4DF3008243CD99A00E7235E /* MyPurchasesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DF3007243CD99A00E7235E /* MyPurchasesViewController.swift */; };
+		D4DF300A243CDA4800E7235E /* MyPurchasesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DF3009243CDA4800E7235E /* MyPurchasesCollectionViewCell.swift */; };
 		D4E8BE662426D4C1000DF585 /* SportsFinalTicketsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E8BE652426D4C1000DF585 /* SportsFinalTicketsViewController.swift */; };
+		D4E99A982433A9CF002089E5 /* PopularVisitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E99A972433A9CF002089E5 /* PopularVisitsViewController.swift */; };
 		D4F3A35923F1D48D00982238 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F3A35823F1D48D00982238 /* AppDelegate.swift */; };
 		D4F3A35B23F1D48D00982238 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F3A35A23F1D48D00982238 /* ViewController.swift */; };
 		D4F3A35E23F1D48D00982238 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4F3A35C23F1D48D00982238 /* Main.storyboard */; };
@@ -34,6 +44,7 @@
 		D4F3A36E23F1D49400982238 /* Tick_itTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F3A36D23F1D49400982238 /* Tick_itTests.swift */; };
 		D4F3A37923F1D49400982238 /* Tick_itUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F3A37823F1D49400982238 /* Tick_itUITests.swift */; };
 		D4F3A38723F2268700982238 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D4F3A38623F2268700982238 /* GoogleService-Info.plist */; };
+		D4FC6451243C025300027EE0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FC6450243C025200027EE0 /* ProfileViewController.swift */; };
 		D4FFACE2242296C3008775B3 /* SportsTicketsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FFACE1242296C3008775B3 /* SportsTicketsViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -70,14 +81,24 @@
 		D4142E8E2424309900646781 /* SportsTicketBookingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsTicketBookingViewController.swift; sourceTree = "<group>"; };
 		D4231BE2240C986500BEFDCA /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		D4231BE4240CA80200BEFDCA /* EventsTicketsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsTicketsViewController.swift; sourceTree = "<group>"; };
+		D45AB6E92433BDFA0009771A /* PopularVisitsBookTicketsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularVisitsBookTicketsViewController.swift; sourceTree = "<group>"; };
+		D45AB6EB2433C4420009771A /* PopularTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularTableViewCell.swift; sourceTree = "<group>"; };
+		D45AB6ED2433ED8B0009771A /* PopularVisitsFinalTicketsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularVisitsFinalTicketsViewController.swift; sourceTree = "<group>"; };
 		D463DC7823F5B4D000F130D4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D463DC7A23F5B62F00F130D4 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		D463DC7C23F5DEE900F130D4 /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
 		D463DC7E23F6155100F130D4 /* MovieCastCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCastCollectionViewCell.swift; sourceTree = "<group>"; };
 		D4BE08FB240F0A8D004C9D18 /* SportsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsViewController.swift; sourceTree = "<group>"; };
 		D4BE905823F3115F00D2AC59 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		D4BEC770243E53560057F8D0 /* Movies.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Movies.storyboard; sourceTree = SOURCE_ROOT; };
+		D4BEC774243E53EF0057F8D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Tick-it/Base.lproj/Events.storyboard"; sourceTree = SOURCE_ROOT; };
+		D4BEC77B243E55920057F8D0 /* Sports.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Sports.storyboard; sourceTree = SOURCE_ROOT; };
+		D4BEC780243E57CE0057F8D0 /* Popular.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Popular.storyboard; sourceTree = SOURCE_ROOT; };
 		D4C66348241812B200941C46 /* EventsTotalTicketsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsTotalTicketsViewController.swift; sourceTree = "<group>"; };
+		D4DF3007243CD99A00E7235E /* MyPurchasesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPurchasesViewController.swift; sourceTree = "<group>"; };
+		D4DF3009243CDA4800E7235E /* MyPurchasesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPurchasesCollectionViewCell.swift; sourceTree = "<group>"; };
 		D4E8BE652426D4C1000DF585 /* SportsFinalTicketsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsFinalTicketsViewController.swift; sourceTree = "<group>"; };
+		D4E99A972433A9CF002089E5 /* PopularVisitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularVisitsViewController.swift; sourceTree = "<group>"; };
 		D4F3A35523F1D48D00982238 /* Tick-it.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tick-it.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4F3A35823F1D48D00982238 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D4F3A35A23F1D48D00982238 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -92,7 +113,8 @@
 		D4F3A37823F1D49400982238 /* Tick_itUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tick_itUITests.swift; sourceTree = "<group>"; };
 		D4F3A37A23F1D49400982238 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4F3A38623F2268700982238 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		D4FFACE1242296C3008775B3 /* SportsTicketsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SportsTicketsViewController.swift; path = ../SportsTicketsViewController.swift; sourceTree = "<group>"; };
+		D4FC6450243C025200027EE0 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		D4FFACE1242296C3008775B3 /* SportsTicketsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsTicketsViewController.swift; sourceTree = "<group>"; };
 		D5B5A4B78CA13F8FD777A647 /* Pods-Tick-it.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tick-it.debug.xcconfig"; path = "Target Support Files/Pods-Tick-it/Pods-Tick-it.debug.xcconfig"; sourceTree = "<group>"; };
 		DB60792D3AEB9204C11078BC /* Pods-Tick-it-Tick-itUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tick-it-Tick-itUITests.release.xcconfig"; path = "Target Support Files/Pods-Tick-it-Tick-itUITests/Pods-Tick-it-Tick-itUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -139,20 +161,11 @@
 			isa = PBXGroup;
 			children = (
 				D4F3A35A23F1D48D00982238 /* ViewController.swift */,
-				D40C408623FB806E0039A145 /* TicketViewController.swift */,
 				D463DC7823F5B4D000F130D4 /* HomeViewController.swift */,
 				D4BE905823F3115F00D2AC59 /* RegisterViewController.swift */,
-				D463DC7C23F5DEE900F130D4 /* MovieDetailsViewController.swift */,
-				D40C408023FAFAA30039A145 /* CinemasListViewController.swift */,
-				D40C408423FB56C10039A145 /* SelectSeatsViewController.swift */,
-				D4231BE4240CA80200BEFDCA /* EventsTicketsViewController.swift */,
-				D4231BE2240C986500BEFDCA /* EventsViewController.swift */,
-				D4BE08FB240F0A8D004C9D18 /* SportsViewController.swift */,
-				D4FFACE1242296C3008775B3 /* SportsTicketsViewController.swift */,
-				D4C66348241812B200941C46 /* EventsTotalTicketsViewController.swift */,
 				D4142E8C2424302F00646781 /* TableViewCell.swift */,
-				D4142E8E2424309900646781 /* SportsTicketBookingViewController.swift */,
-				D4E8BE652426D4C1000DF585 /* SportsFinalTicketsViewController.swift */,
+				D4FC6450243C025200027EE0 /* ProfileViewController.swift */,
+				D4DF3007243CD99A00E7235E /* MyPurchasesViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -163,8 +176,56 @@
 				D463DC7E23F6155100F130D4 /* MovieCastCollectionViewCell.swift */,
 				D40C408223FB20850039A145 /* TheatreListCollectionViewCell.swift */,
 				D463DC7A23F5B62F00F130D4 /* CollectionViewCell.swift */,
+				D4DF3009243CDA4800E7235E /* MyPurchasesCollectionViewCell.swift */,
 			);
 			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
+		D4BEC76F243E52370057F8D0 /* Movies */ = {
+			isa = PBXGroup;
+			children = (
+				D4BEC770243E53560057F8D0 /* Movies.storyboard */,
+				D463DC7C23F5DEE900F130D4 /* MovieDetailsViewController.swift */,
+				D40C408623FB806E0039A145 /* TicketViewController.swift */,
+				D40C408023FAFAA30039A145 /* CinemasListViewController.swift */,
+				D40C408423FB56C10039A145 /* SelectSeatsViewController.swift */,
+			);
+			path = Movies;
+			sourceTree = "<group>";
+		};
+		D4BEC772243E53CF0057F8D0 /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				D4231BE4240CA80200BEFDCA /* EventsTicketsViewController.swift */,
+				D4231BE2240C986500BEFDCA /* EventsViewController.swift */,
+				D4C66348241812B200941C46 /* EventsTotalTicketsViewController.swift */,
+				D4BEC773243E53EF0057F8D0 /* Events.storyboard */,
+			);
+			path = Events;
+			sourceTree = "<group>";
+		};
+		D4BEC776243E54B00057F8D0 /* Sports */ = {
+			isa = PBXGroup;
+			children = (
+				D4BEC77B243E55920057F8D0 /* Sports.storyboard */,
+				D4BE08FB240F0A8D004C9D18 /* SportsViewController.swift */,
+				D4FFACE1242296C3008775B3 /* SportsTicketsViewController.swift */,
+				D4142E8E2424309900646781 /* SportsTicketBookingViewController.swift */,
+				D4E8BE652426D4C1000DF585 /* SportsFinalTicketsViewController.swift */,
+			);
+			path = Sports;
+			sourceTree = "<group>";
+		};
+		D4BEC77A243E54EA0057F8D0 /* Popular */ = {
+			isa = PBXGroup;
+			children = (
+				D4BEC780243E57CE0057F8D0 /* Popular.storyboard */,
+				D4E99A972433A9CF002089E5 /* PopularVisitsViewController.swift */,
+				D45AB6E92433BDFA0009771A /* PopularVisitsBookTicketsViewController.swift */,
+				D45AB6EB2433C4420009771A /* PopularTableViewCell.swift */,
+				D45AB6ED2433ED8B0009771A /* PopularVisitsFinalTicketsViewController.swift */,
+			);
+			path = Popular;
 			sourceTree = "<group>";
 		};
 		D4F3A34C23F1D48D00982238 = {
@@ -192,6 +253,10 @@
 		D4F3A35723F1D48D00982238 /* Tick-it */ = {
 			isa = PBXGroup;
 			children = (
+				D4BEC77A243E54EA0057F8D0 /* Popular */,
+				D4BEC776243E54B00057F8D0 /* Sports */,
+				D4BEC772243E53CF0057F8D0 /* Events */,
+				D4BEC76F243E52370057F8D0 /* Movies */,
 				D42AF0A823FC8D6400F94319 /* CollectionViewCells */,
 				D42AF0A723FC8C3400F94319 /* Home */,
 				D4F3A35823F1D48D00982238 /* AppDelegate.swift */,
@@ -348,6 +413,10 @@
 				D4F3A38723F2268700982238 /* GoogleService-Info.plist in Resources */,
 				D4F3A36023F1D49400982238 /* Assets.xcassets in Resources */,
 				D4F3A35E23F1D48D00982238 /* Main.storyboard in Resources */,
+				D4BEC781243E57CE0057F8D0 /* Popular.storyboard in Resources */,
+				D4BEC77C243E55920057F8D0 /* Sports.storyboard in Resources */,
+				D4BEC771243E53560057F8D0 /* Movies.storyboard in Resources */,
+				D4BEC775243E53EF0057F8D0 /* Events.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,12 +549,19 @@
 				D4BE905923F3115F00D2AC59 /* RegisterViewController.swift in Sources */,
 				D4E8BE662426D4C1000DF585 /* SportsFinalTicketsViewController.swift in Sources */,
 				D40C408323FB20850039A145 /* TheatreListCollectionViewCell.swift in Sources */,
+				D4DF3008243CD99A00E7235E /* MyPurchasesViewController.swift in Sources */,
 				D40C408723FB806E0039A145 /* TicketViewController.swift in Sources */,
+				D4FC6451243C025300027EE0 /* ProfileViewController.swift in Sources */,
 				D463DC7D23F5DEE900F130D4 /* MovieDetailsViewController.swift in Sources */,
+				D45AB6EA2433BDFA0009771A /* PopularVisitsBookTicketsViewController.swift in Sources */,
 				D4BE08FC240F0A8D004C9D18 /* SportsViewController.swift in Sources */,
+				D4E99A982433A9CF002089E5 /* PopularVisitsViewController.swift in Sources */,
 				D4231BE3240C986500BEFDCA /* EventsViewController.swift in Sources */,
 				D4FFACE2242296C3008775B3 /* SportsTicketsViewController.swift in Sources */,
+				D45AB6EE2433ED8B0009771A /* PopularVisitsFinalTicketsViewController.swift in Sources */,
+				D4DF300A243CDA4800E7235E /* MyPurchasesCollectionViewCell.swift in Sources */,
 				D4231BE5240CA80200BEFDCA /* EventsTicketsViewController.swift in Sources */,
+				D45AB6EC2433C4420009771A /* PopularTableViewCell.swift in Sources */,
 				D4C66349241812B200941C46 /* EventsTotalTicketsViewController.swift in Sources */,
 				D4F3A35B23F1D48D00982238 /* ViewController.swift in Sources */,
 				D4F3A35923F1D48D00982238 /* AppDelegate.swift in Sources */,
@@ -529,6 +605,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		D4BEC773243E53EF0057F8D0 /* Events.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D4BEC774243E53EF0057F8D0 /* Base */,
+			);
+			name = Events.storyboard;
+			sourceTree = "<group>";
+		};
 		D4F3A35C23F1D48D00982238 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

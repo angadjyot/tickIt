@@ -24,10 +24,12 @@ class HomeViewController: UIViewController,UICollectionViewDelegate,UICollection
     var moviesDict = [[String:AnyObject]]()
     var eventsDict = [[String:AnyObject]]()
     var sportsDict = [[String:AnyObject]]()
+    var popularPlacesDict = [[String:AnyObject]]()
     
     var dict = [String:AnyObject]()
     var eventDict = [String:AnyObject]()
     var sportDict = [String:AnyObject]()
+    var popularDict = [String:AnyObject]()
     
     var pics = [AlamofireSource]()
     var alam:AlamofireSource!
@@ -49,13 +51,24 @@ class HomeViewController: UIViewController,UICollectionViewDelegate,UICollection
         print("selectedIndex view didload ",selectedIndex)
             
   
+        self.navigationController?.navigationBar.barTintColor = UIColor(displayP3Red: 19/255, green: 47/255, blue: 170/255, alpha: 1/255)
+        
         
         imageslideshow.setImageInputs([ImageSource(image:UIImage(named:"1917-1")!), ImageSource(image: UIImage(named: "tick1")!), ImageSource(image: UIImage(named: "badboys")!)])
         
         
         self.navigationItem.title = "Movies"
+          self.navigationController?.navigationBar.tintColor = UIColor.white
         
-       retrieveMovies()
+        
+        
+        
+        //self.navigationController?.navigationBar.barTintColor = UIColor.red
+        
+//        self.navigationController?.navigationBar.barStyle = UIBarStyle.black
+//        self.navigationController?.navigationBar.tintColor = UIColor.white
+//        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.orange]
+        retrieveMovies()
         
     }
     
@@ -68,6 +81,8 @@ class HomeViewController: UIViewController,UICollectionViewDelegate,UICollection
                 return eventsDict.count
             }else if selectedIndex == 2{
                 return sportsDict.count
+            }else if selectedIndex == 3{
+                return popularPlacesDict.count
             }
 
         }
@@ -120,7 +135,19 @@ class HomeViewController: UIViewController,UICollectionViewDelegate,UICollection
 //
                     cell.movieName.text = index["sportsEventName"] as? String
                     
-                }
+                }else if selectedIndex == 3{
+                                    
+                let index = popularPlacesDict[indexPath.row]
+                if let movieName = index["placeImage"] as? String{
+                cell.image.layer.cornerRadius = 10.0
+                cell.image.layer.masksToBounds = true
+                let url = URL(string: movieName)
+                cell.image.kf.setImage(with: url)
+              }
+                
+               cell.movieName.text = index["placeName"] as? String
+                                    
+            }
                 
           }
         }else{
@@ -153,10 +180,11 @@ class HomeViewController: UIViewController,UICollectionViewDelegate,UICollection
                 sportDict = sportsDict[indexPath.row]
                 self.performSegue(withIdentifier: "sports", sender: nil)
             }else if selectedIndex == 3{
-                
+                popularDict = popularPlacesDict[indexPath.row]
+                self.performSegue(withIdentifier: "popular", sender: nil)
             }
             
-        }
+         }
     else{
             
             print("nothing")
@@ -177,7 +205,13 @@ class HomeViewController: UIViewController,UICollectionViewDelegate,UICollection
                 imageslideshow.setImageInputs([ImageSource(image:UIImage(named:"nbaFront")!), ImageSource(image: UIImage(named: "torontoFront")!), ])
                 
                 
+            }else if selectedIndex == 3{
+                self.navigationItem.title = "Popular Places"
+                imageslideshow.setImageInputs([ImageSource(image:UIImage(named:"cntower")!), ImageSource(image: UIImage(named: "ripleysaquarium")!), ])
+                
+                
             }
+
             
             self.moviesCollectionView.reloadData()
         }
@@ -197,6 +231,9 @@ class HomeViewController: UIViewController,UICollectionViewDelegate,UICollection
         }else if segue.identifier == "sports"{
             let vc = segue.destination as? SportsViewController
             vc?.sportDict = sportDict
+        }else if segue.identifier == "popular"{
+            let vc = segue.destination as? PopularVisitsViewController
+            vc?.popularDict = popularDict
         }
     }
     
@@ -216,19 +253,6 @@ class HomeViewController: UIViewController,UICollectionViewDelegate,UICollection
                     self.firstTimeCheck = true
                 }
 
-                
-                
-//                for i in 0..<self.slideimages.count{
-//                    self.alam = AlamofireSource(urlString:self.slideimages[i])
-//                    self.pics.append(self.alam);
-//                }
-//                self.imageslideshow.setImageInputs(self.pics);
-//
-                
-//                let x = self.moviesDict["theatreList"] as? [[String:AnyObject]]
-//                print("hehehe",x)
-                
-                
                 if self.selectedIndex == 0{
                    self.moviesCollectionView.reloadData()
                 }
@@ -268,10 +292,27 @@ class HomeViewController: UIViewController,UICollectionViewDelegate,UICollection
                 for i in snap!.documents{
                     self.sportsDict.append(i.data() as [String : AnyObject])
                 }
-                
+                self.retrievePopularPlaces()
             }
         })
     }
+    
+    func retrievePopularPlaces(){
+        db = Firestore.firestore()
+        db?.collection("popularVisits").getDocuments(completion: { (snap, err) in
+            if let err = err{
+                print("err is",err.localizedDescription)
+            }else{
+                
+                for i in snap!.documents{
+                    self.popularPlacesDict.append(i.data() as [String : AnyObject])
+                }
+                
+                print("popularPlacesDict",self.popularPlacesDict)
+            }
+        })
+    }
+    
     
     
     @IBAction func logout(_ sender: UIBarButtonItem) {
